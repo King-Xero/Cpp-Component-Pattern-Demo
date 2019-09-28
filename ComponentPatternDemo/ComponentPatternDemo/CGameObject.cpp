@@ -5,7 +5,7 @@
 void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 {
 	//Handle input
-	m_InputComponent.Update(*this);
+	m_InputComponent->Update(*this);
 
 	//Handle physics
 	m_PhysicsComponent.Update(*this, collisionSystem);

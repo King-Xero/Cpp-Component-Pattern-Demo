@@ -5,8 +5,6 @@ class CGameObject;
 class CInputComponent
 {
 public:
-	void Update(CGameObject& gameObject);
-
-private:
-	static const int sk_iMOVEMENT_ACCELERATION = 3;
+	virtual ~CInputComponent() = default;
+	virtual void Update(CGameObject& gameObject) = 0;
 };

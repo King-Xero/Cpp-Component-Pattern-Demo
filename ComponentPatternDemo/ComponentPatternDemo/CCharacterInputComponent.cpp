@@ -1,9 +1,9 @@
-﻿#include "CInputComponent.h"
-#include "CGameObject.h"
-#include "CInputController.h"
+﻿#include "CCharacterInputComponent.h"
 #include "EJoystickDirection.h"
+#include "CInputController.h"
+#include "CGameObject.h"
 
-void CInputComponent::Update(CGameObject& gameObject)
+void CCharacterInputComponent::Update(CGameObject& gameObject)
 {
 	//Handle input
 	switch (CInputController::GetJoyStickDirection())

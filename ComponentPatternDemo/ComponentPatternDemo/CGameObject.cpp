@@ -11,14 +11,5 @@ void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 	m_PhysicsComponent.Update(*this, collisionSystem);
 
 	//Handle graphics
-	CSprite* sprite = &m_SpriteIdle;
-	if (m_iVelocity > 0)
-	{
-		sprite = &m_SpriteWalkRight;
-	}
-	else if (m_iVelocity < 0)
-	{
-		sprite = &m_SpriteWalkLeft;
-	}
-	graphics.Draw(*sprite, m_iX, m_iY);
+	m_GraphicsComponent.Update(*this, graphics);
 }

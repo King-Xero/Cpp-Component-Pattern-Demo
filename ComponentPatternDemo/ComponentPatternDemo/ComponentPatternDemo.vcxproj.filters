@@ -51,6 +51,9 @@
     <ClInclude Include="CPhysicsComponent.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
+    <ClInclude Include="CGraphicsComponent.h">
+      <Filter>Header Files\Components</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCharacter.cpp">
@@ -78,6 +81,9 @@
       <Filter>Source Files\Components</Filter>
     </ClCompile>
     <ClCompile Include="CPhysicsComponent.cpp">
+      <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CGraphicsComponent.cpp">
       <Filter>Source Files\Components</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,7 +1,6 @@
 ﻿#include "CGameObject.h"
 #include "CCollisionSystem.h"
 #include "CGraphics.h"
-#include "CInputController.h"
 
 void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 {
@@ -9,8 +8,7 @@ void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 	m_InputComponent.Update(*this);
 
 	//Handle physics
-	m_iX += m_iVelocity;
-	collisionSystem.CheckCollisions(m_CollisionBounds, m_iX, m_iY, m_iVelocity);
+	m_PhysicsComponent.Update(*this, collisionSystem);
 
 	//Handle graphics
 	CSprite* sprite = &m_SpriteIdle;

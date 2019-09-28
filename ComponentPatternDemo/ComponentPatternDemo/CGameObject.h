@@ -1,7 +1,7 @@
 ﻿#pragma once
-#include "SCollisionBounds.h"
 #include "CSprite.h"
 #include "CInputComponent.h"
+#include "CPhysicsComponent.h"
 
 class CGraphics;
 class CCollisionSystem;
@@ -19,9 +19,8 @@ public:
 	
 private:
 	CInputComponent m_InputComponent;
+	CPhysicsComponent m_PhysicsComponent;
 	
-	SCollisionBounds m_CollisionBounds;
-
 	CSprite m_SpriteIdle;
 	CSprite m_SpriteWalkRight;
 	CSprite m_SpriteWalkLeft;

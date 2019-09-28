@@ -120,6 +120,7 @@
     <ClInclude Include="CGameObject.h" />
     <ClInclude Include="CGraphics.h" />
     <ClInclude Include="CInputController.h" />
+    <ClInclude Include="CPhysicsComponent.h" />
     <ClInclude Include="CSprite.h" />
     <ClInclude Include="EJoystickDirection.h" />
     <ClInclude Include="CInputComponent.h" />
@@ -131,6 +132,7 @@
     <ClCompile Include="CGameObject.cpp" />
     <ClCompile Include="CGraphics.cpp" />
     <ClCompile Include="CInputController.cpp" />
+    <ClCompile Include="CPhysicsComponent.cpp" />
     <ClCompile Include="CSprite.cpp" />
     <ClCompile Include="CInputComponent.cpp" />
     <ClCompile Include="SCollisionBounds.cpp" />

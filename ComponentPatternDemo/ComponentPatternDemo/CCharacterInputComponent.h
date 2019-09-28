@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "CInputComponent.h"
 
-class CCharacterInputComponent : CInputComponent
+class CCharacterInputComponent : public CInputComponent
 {
 public:
 	void Update(CGameObject& gameObject) override;

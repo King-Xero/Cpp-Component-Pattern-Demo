@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "CPhysicsComponent.h"
 
-class CCharacterPhysicsComponent : CPhysicsComponent
+class CCharacterPhysicsComponent : public CPhysicsComponent
 {
 public:
 	void Update(CGameObject& gameObject, CCollisionSystem& collisionSystem) override;

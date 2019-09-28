@@ -63,6 +63,9 @@
     <ClInclude Include="CCharacterGraphicsComponent.h">
       <Filter>Header Files\Components</Filter>
     </ClInclude>
+    <ClInclude Include="CreationExamples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCharacter.cpp">
@@ -94,6 +97,9 @@
     </ClCompile>
     <ClCompile Include="CCharacterGraphicsComponent.cpp">
       <Filter>Source Files\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="CreationExamples.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

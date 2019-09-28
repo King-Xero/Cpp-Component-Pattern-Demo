@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include "CGraphicsComponent.h"
 
-class CCharacterGraphicsComponent : CGraphicsComponent
+class CCharacterGraphicsComponent : public CGraphicsComponent
 {
 public:
 	void Update(CGameObject& gameObject, CGraphics& graphics) override;

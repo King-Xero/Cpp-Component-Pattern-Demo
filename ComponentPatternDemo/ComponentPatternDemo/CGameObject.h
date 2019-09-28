@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "SCollisionBounds.h"
 #include "CSprite.h"
+#include "CInputComponent.h"
 
 class CGraphics;
 class CCollisionSystem;
@@ -12,12 +13,13 @@ public:
 
 	void Update(CCollisionSystem& collisionSystem, CGraphics& graphics);
 
-private:
-	static const int sk_iMOVEMENT_ACCELERATION = 3;
 	int m_iVelocity;
 	int m_iX;
 	int m_iY;
-
+	
+private:
+	CInputComponent m_InputComponent;
+	
 	SCollisionBounds m_CollisionBounds;
 
 	CSprite m_SpriteIdle;

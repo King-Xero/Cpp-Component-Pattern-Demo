@@ -6,17 +6,7 @@
 void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 {
 	//Handle input
-	switch (CInputController::GetJoyStickDirection())
-	{
-	case EJoystickDirection::EDir_None:
-		break;
-	case EJoystickDirection::EDir_Left:
-		m_iVelocity -= sk_iMOVEMENT_ACCELERATION;
-		break;
-	case EJoystickDirection::EDir_Right:
-		m_iVelocity += sk_iMOVEMENT_ACCELERATION;
-		break;
-	}
+	m_InputComponent.Update(*this);
 
 	//Handle physics
 	m_iX += m_iVelocity;

@@ -1,8 +1,8 @@
-﻿#include "CGraphicsComponent.h"
+﻿#include "CCharacterGraphicsComponent.h"
 #include "CGameObject.h"
 #include "CGraphics.h"
 
-void CGraphicsComponent::Update(CGameObject& gameObject, CGraphics& graphics)
+void CCharacterGraphicsComponent::Update(CGameObject& gameObject, CGraphics& graphics)
 {
 	//Handle graphics
 	CSprite* sprite = &m_SpriteIdle;

@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="CCharacter.h" />
+    <ClInclude Include="CCharacterGraphicsComponent.h" />
     <ClInclude Include="CCharacterInputComponent.h" />
     <ClInclude Include="CCharacterPhysicsComponent.h" />
     <ClInclude Include="CCollisionSystem.h" />
@@ -131,12 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CCharacter.cpp" />
+    <ClCompile Include="CCharacterGraphicsComponent.cpp" />
     <ClCompile Include="CCharacterInputComponent.cpp" />
     <ClCompile Include="CCharacterPhysicsComponent.cpp" />
     <ClCompile Include="CCollisionSystem.cpp" />
     <ClCompile Include="CGameObject.cpp" />
     <ClCompile Include="CGraphics.cpp" />
-    <ClCompile Include="CGraphicsComponent.cpp" />
     <ClCompile Include="CInputController.cpp" />
     <ClCompile Include="CSprite.cpp" />
     <ClCompile Include="SCollisionBounds.cpp" />

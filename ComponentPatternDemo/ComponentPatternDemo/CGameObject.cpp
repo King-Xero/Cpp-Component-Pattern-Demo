@@ -11,5 +11,5 @@ void CGameObject::Update(CCollisionSystem& collisionSystem, CGraphics& graphics)
 	m_PhysicsComponent->Update(*this, collisionSystem);
 
 	//Handle graphics
-	m_GraphicsComponent.Update(*this, graphics);
+	m_GraphicsComponent->Update(*this, graphics);
 }

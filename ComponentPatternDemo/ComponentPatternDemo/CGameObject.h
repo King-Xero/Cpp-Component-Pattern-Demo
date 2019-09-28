@@ -15,15 +15,17 @@ public:
 	, m_iY(0)
 	, m_InputComponent(nullptr)
 	, m_PhysicsComponent(nullptr)
+	, m_GraphicsComponent(nullptr)
 	{
 	}
 
-	CGameObject(CInputComponent* inputComponent, CPhysicsComponent* physicsComponent)
+	CGameObject(CInputComponent* inputComponent, CPhysicsComponent* physicsComponent, CGraphicsComponent* graphicsComponent)
 	: m_iVelocity(0)
 	, m_iX(0)
 	, m_iY(0)
 	, m_InputComponent(inputComponent)
 	, m_PhysicsComponent(physicsComponent)
+	, m_GraphicsComponent(graphicsComponent)
 	{		
 	}
 
@@ -36,5 +38,5 @@ public:
 private:
 	CInputComponent* m_InputComponent;
 	CPhysicsComponent* m_PhysicsComponent;
-	CGraphicsComponent m_GraphicsComponent;
+	CGraphicsComponent* m_GraphicsComponent;
 };

@@ -7,10 +7,6 @@ class CGameObject;
 class CGraphicsComponent
 {
 public:
-	void Update(CGameObject& gameObject, CGraphics& graphics);
-
-private:
-	CSprite m_SpriteIdle;
-	CSprite m_SpriteWalkRight;
-	CSprite m_SpriteWalkLeft;
+	virtual ~CGraphicsComponent() = default;
+	virtual void Update(CGameObject& gameObject, CGraphics& graphics) = 0;
 };

@@ -4,6 +4,5 @@
 class CInputController
 {
 public:
-
 	static EJoystickDirection GetJoyStickDirection();
 };

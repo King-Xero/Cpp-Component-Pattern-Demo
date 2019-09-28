@@ -8,7 +8,10 @@ class CCollisionSystem;
 class CCharacter
 {
 public:
-	CCharacter() : m_iVelocity(0), m_iX(0), m_iY(0) {  }
+	CCharacter()
+	: m_iVelocity(0)
+	, m_iX(0)
+	, m_iY(0) {  }
 
 	void Update(CCollisionSystem& collisionSystem, CGraphics& graphics);
 

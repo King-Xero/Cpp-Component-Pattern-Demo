@@ -1,8 +1,8 @@
-﻿#include "CPhysicsComponent.h"
+﻿#include "CCharacterPhysicsComponent.h"
 #include "CGameObject.h"
 #include "CCollisionSystem.h"
 
-void CPhysicsComponent::Update(CGameObject& gameObject, CCollisionSystem& collisionSystem)
+void CCharacterPhysicsComponent::Update(CGameObject& gameObject, CCollisionSystem& collisionSystem)
 {
 	//Handle physics
 	gameObject.m_iX += gameObject.m_iVelocity;

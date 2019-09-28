@@ -7,8 +7,6 @@ class CCollisionSystem;
 class CPhysicsComponent
 {
 public:
-	void Update(CGameObject& gameObject, CCollisionSystem& collisionSystem);
-
-private:
-	SCollisionBounds m_CollisionBounds;
+	virtual ~CPhysicsComponent() = default;
+	virtual void Update(CGameObject& gameObject, CCollisionSystem& collisionSystem) = 0;
 };

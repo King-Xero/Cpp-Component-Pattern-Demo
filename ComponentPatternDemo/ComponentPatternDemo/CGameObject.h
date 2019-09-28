@@ -9,11 +9,21 @@ class CCollisionSystem;
 class CGameObject
 {
 public:
-	CGameObject() : m_iVelocity(0), m_iX(0), m_iY(0), m_InputComponent(nullptr)
+	CGameObject()
+	: m_iVelocity(0)
+	, m_iX(0)
+	, m_iY(0)
+	, m_InputComponent(nullptr)
+	, m_PhysicsComponent(nullptr)
 	{
 	}
 
-	CGameObject(CInputComponent* inputComponent) : m_iVelocity(0), m_iX(0), m_iY(0), m_InputComponent(inputComponent)
+	CGameObject(CInputComponent* inputComponent, CPhysicsComponent* physicsComponent)
+	: m_iVelocity(0)
+	, m_iX(0)
+	, m_iY(0)
+	, m_InputComponent(inputComponent)
+	, m_PhysicsComponent(physicsComponent)
 	{		
 	}
 
@@ -25,6 +35,6 @@ public:
 	
 private:
 	CInputComponent* m_InputComponent;
-	CPhysicsComponent m_PhysicsComponent;
+	CPhysicsComponent* m_PhysicsComponent;
 	CGraphicsComponent m_GraphicsComponent;
 };
